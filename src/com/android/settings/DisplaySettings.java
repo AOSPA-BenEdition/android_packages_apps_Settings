@@ -40,6 +40,7 @@ import com.android.settings.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
+import com.android.settings.benedition.QsAlphaPreferenceController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -101,6 +102,7 @@ public class DisplaySettings extends DashboardFragment {
                 "android.theme.customization.font"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.adaptive_icon_shape"));
+        controllers.add(new QsAlphaPreferenceController(context));
         return controllers;
     }
 
