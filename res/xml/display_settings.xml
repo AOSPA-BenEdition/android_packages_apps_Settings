@@ -186,9 +186,18 @@
         <ListPreference
             android:key="android.theme.customization.font"
             android:title="@string/theme_customization_font_title"/>
+
         <ListPreference
             android:key="android.theme.customization.adaptive_icon_shape"
             android:title="@string/theme_customization_icon_shape_title"/>
+
+        <com.android.settings.benedition.preferences.CustomSeekBarPreference
+            android:key="qs_panel_alpha"
+            android:title="@string/qs_panel_alpha_title"
+            android:summary="@string/qs_panel_alpha_summary"
+            android:max="255"
+            settings:min="0"
+            android:defaultValue="255" />
     </PreferenceCategory>
 
 </PreferenceScreen>

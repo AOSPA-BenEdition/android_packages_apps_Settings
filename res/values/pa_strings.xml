@@ -282,4 +282,8 @@
     <string name="dashboard_suggestions_title">Dashboard suggestions</string> 
     <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string> 
     <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
+
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Quick Settings opacity</string>
+    <string name="qs_panel_alpha_summary">Configure opacity of background</string>
 </resources>
