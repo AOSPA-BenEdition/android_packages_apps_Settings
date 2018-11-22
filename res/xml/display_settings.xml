@@ -202,8 +202,13 @@
 
     <PreferenceCategory
         android:key="misc_customizations"
-        android:title="@string/misc_customizations_category"
+        android:title="@string/misc_customizations_category" >
 
+     <Preference
+         android:key="status_bar_clock"
+         android:fragment="com.android.settings.benedition.StatusBarClock"
+         android:title="@string/status_bar_clock_title"
+         android:summary="@string/status_bar_clock_title_summary" />
 
     </PreferenceCategory>
 </PreferenceScreen>
