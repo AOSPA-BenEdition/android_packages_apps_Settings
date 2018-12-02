@@ -24,6 +24,12 @@
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="true" />
 
+    <PreferenceScreen
+        android:key="battery_charge_sound"
+        android:title="@string/notification_sound_battery_charge_title"
+        android:summary="@string/notification_sound_battery_charge_summary"
+        android:fragment="com.android.settings.fuelgauge.BatteryChargeSoundSettings" />
+
     <PreferenceCategory
         android:key="aggressive_battery"
         android:title="@string/aggressive_battery_title">
