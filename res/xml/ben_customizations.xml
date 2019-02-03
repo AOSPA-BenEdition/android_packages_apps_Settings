@@ -16,4 +16,11 @@
         android:title="@string/themeroom_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <com.android.settings.benedition.preferences.SystemSettingMasterSwitchPreference
+            android:key="status_bar_custom_header"
+            android:fragment="com.android.settings.benedition.QsHeader"
+            android:title="@string/status_bar_custom_header_title"
+            android:summary="@string/status_bar_custom_header_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
