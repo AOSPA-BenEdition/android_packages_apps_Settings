@@ -295,6 +295,10 @@
     <string name="traffic_expanded_statusbar">Expanded Statusbar</string>
     <string name="network_traffic_refresh_interval_title">Refresh interval</string>
 
+    <!-- Show LTE/4G switch -->
+    <string name="show_lte_fourgee_title">4G/LTE network icon</string>
+    <string name="show_lte_fourgee_summary">Display the 4G or LTE network icon when available in the statusbar</string>
+
     <!-- Other Misc Customization -->
     <string name="misc_customizations_category">Other Misc Customizations</string>
 </resources>
