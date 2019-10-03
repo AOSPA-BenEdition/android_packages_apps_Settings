@@ -104,29 +104,9 @@
         android:positiveButtonText="@string/save"
         android:negativeButtonText="@android:string/cancel" />
 
-    <PreferenceCategory
-        android:key="net_monitor_category"
-        android:title="@string/net_monitor_category_title"
-        android:order="25" >
-
-    <com.android.settings.benedition.preferences.SystemSettingSwitchPreference
-        android:key="network_traffic_state"
-        android:title="@string/network_traffic_state_title"
-        android:summary="@string/network_traffic_state_summary"
-        android:defaultValue="true" />
-
-    <com.android.settings.benedition.preferences.SystemSettingSeekBarPreference
-        android:key="network_traffic_autohide_threshold"
-        android:title="@string/network_traffic_autohide_threshold_title"
-        android:max="10"
-        settings:min="0"
-        settings:units="" />
-
-    <com.android.settings.benedition.preferences.SystemSettingSwitchPreference
-        android:key="network_traffic_hidearrow"
-        android:title="@string/network_traffic_hidearrow"
-        android:summary="@string/network_traffic_hidearrow_summary"
-        android:dependency="network_traffic_state"
-        android:defaultValue="false" />
-   </PreferenceCategory>
+    <Preference
+        android:key="traffic_category"
+        android:title="@string/trafficat"
+        android:summary="@string/trafficat_summary"
+        android:fragment="com.android.settings.benedition.NetworkTraffic" />
 </PreferenceScreen>
