@@ -241,4 +241,8 @@
     <string name="theme_type_du_pitchblack">Pitch Black</string>
     <string name="theme_type_dark_grey">Dark Grey</string>
     <string name="theme_type_material_ocean">Material Ocean</string>
+
+    <!-- Battery Options -->
+    <string name="advanced_battery_options_title">Advanced</string>
+    <string name="advanced_battery_options_summary">Advanced Battery options</string>
 </resources>
