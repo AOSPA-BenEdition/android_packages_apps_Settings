@@ -200,4 +200,10 @@
             android:defaultValue="255" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="misc_customizations"
+        android:title="@string/misc_customizations_category"
+
+
+    </PreferenceCategory>
 </PreferenceScreen>
