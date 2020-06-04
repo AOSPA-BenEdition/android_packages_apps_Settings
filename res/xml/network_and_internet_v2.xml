@@ -62,19 +62,6 @@
         settings:platform_slice="true"
         settings:userRestriction="no_airplane_mode"/>
 
-    <com.android.settings.benedition.preferences.SystemSettingSwitchPreference
-        android:key="roaming_indicator_icon"
-        android:title="@string/roaming_indicator_icon_title"
-        android:summary="@string/roaming_indicator_icon_summary"
-        android:defaultValue="true"/>
-
-    <SwitchPreference
-        android:key="show_lte_fourgee"
-        android:title="@string/show_lte_fourgee_title"
-        android:summary="@string/show_lte_fourgee_summary"
-        android:defaultValue="false"
-        android:fragment="com.android.settings.benedition.StatusBar"/>
-
     <com.android.settingslib.RestrictedPreference
         android:key="manage_mobile_plan"
         android:title="@string/manage_mobile_plan_title"
@@ -120,9 +107,28 @@
         android:positiveButtonText="@string/save"
         android:negativeButtonText="@android:string/cancel" />
 
-    <Preference
-        android:key="traffic_category"
-        android:title="@string/trafficat"
-        android:summary="@string/trafficat_summary"
-        android:fragment="com.android.settings.benedition.NetworkTraffic" />
+    <PreferenceCategory
+        android:key="misc_customizations"
+        android:title="@string/misc_customizations_category"
+        android:order="25" >
+
+     <Preference
+         android:key="traffic_category"
+         android:title="@string/trafficat"
+         android:summary="@string/trafficat_summary"
+         android:fragment="com.android.settings.benedition.NetworkTraffic" />
+
+     <com.android.settings.benedition.preferences.SystemSettingSwitchPreference
+         android:key="roaming_indicator_icon"
+         android:title="@string/roaming_indicator_icon_title"
+         android:summary="@string/roaming_indicator_icon_summary"
+         android:defaultValue="true"/>
+
+     <SwitchPreference
+         android:key="show_lte_fourgee"
+         android:title="@string/show_lte_fourgee_title"
+         android:summary="@string/show_lte_fourgee_summary"
+         android:defaultValue="false"
+
+    </PreferenceCategory>
 </PreferenceScreen>

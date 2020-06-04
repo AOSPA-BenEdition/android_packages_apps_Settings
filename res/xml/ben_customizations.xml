@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018-2020 SuperiorOS Project
+<!-- Copyright (C) 2020 BenEdition
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,20 +16,4 @@
         android:title="@string/themeroom_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <ListPreference
-            android:key="theme_switch"
-            android:title="@string/theme_type_title"
-            android:summary="%s"
-            android:dialogTitle="@string/theme_type_summary"
-            android:entries="@array/theme_type_titles"
-            android:entryValues="@array/theme_type_values"
-            android:defaultValue="1"/>
-
-        <com.android.settings.benedition.preferences.CustomSeekBarPreference
-            android:key="qs_panel_alpha"
-            android:title="@string/qs_panel_alpha_title"
-            android:summary="@string/qs_panel_alpha_summary"
-            android:max="255"
-            settings:min="0"
-            android:defaultValue="255" />
 </PreferenceScreen>
