@@ -54,10 +54,6 @@ import com.android.settings.R;
 public class StatusBar extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String SHOW_LTE_FOURGEE = "show_lte_fourgee";
-
-    private SwitchPreference mShowLteFourGee;
-
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -67,24 +63,10 @@ public class StatusBar extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        mShowLteFourGee = (SwitchPreference) findPreference(SHOW_LTE_FOURGEE);
-        mShowLteFourGee.setChecked((Settings.System.getInt(getContentResolver(),
-                Settings.System.SHOW_LTE_FOURGEE, 0) == 1));
-        mShowLteFourGee.setOnPreferenceChangeListener(this);
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mShowLteFourGee) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.SHOW_LTE_FOURGEE, value ? 1 : 0);
-            return true;
-        }
-        return false;
-    }
-
-    @Override    public int getMetricsCategory() {
+    public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.FEATURE_PREFERENCES;
     }
 }
